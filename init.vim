@@ -5,31 +5,27 @@ set showcmd            " display incomplete commands
 set nu rnu
 set hlsearch
 set hidden
+syntax on
+filetype plugin indent on
 " Appearance
 set termguicolors
 colo molokai
-let mapleader = " "
+nmap <Space> <leader>
 
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
 
 " Don't use Ex mode, use Q for formatting
-noremap Q gq
+" noremap Q gq
+inoremap jk <esc>
+inoremap <esc> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
-
-" Switch syntax highlighting on
-syntax on
-
-" I like highlighting strings inside C comments.
-let c_comment_strings=1
-
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'textwidth' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype plugin indent on
 
 nnoremap <leader>ve :vsplit $MYVIMRC<cr>
 nnoremap <leader>vs :source $MYVIMRC<cr>
@@ -49,12 +45,3 @@ augroup vimrcEx
     \ endif
 
 augroup END
-
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set buftype=nofile | read ++edit # | 0d_ | diffthis
-                 \ | wincmd p | diffthis
-endif
