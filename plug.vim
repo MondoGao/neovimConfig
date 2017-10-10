@@ -1,6 +1,8 @@
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'scrooloose/nerdtree'
+Plug 'mbbill/undotree'
 Plug 'wellle/targets.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -8,8 +10,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/denite.nvim'
 Plug 'weynhamz/vim-plugin-minibufexpl'
-Plug 'mbbill/undotree'
-Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'kshenoy/vim-signature'

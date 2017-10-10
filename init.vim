@@ -10,18 +10,28 @@ filetype plugin indent on
 " Appearance
 set termguicolors
 colo molokai
-nmap <Space> <leader>
+map <Space> <leader>
 
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
 
-" Don't use Ex mode, use Q for formatting
-" noremap Q gq
-inoremap jk <esc>
-inoremap <esc> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
+" a - Application
+" an - NERDTree
+nnoremap <leader>ann :NERDTree
+nnoremap <leader>ant :NERDTreeToggle<cr> 
+nnoremap <leader>ano :NERDTreeFocus<cr> 
+nnoremap <leader>anm :NERDTreeMirrow<cr> 
+nnoremap <leader>anc :NERDTreeClose<cr> 
+nnoremap <leader>anf :NERDTreeFind<cr> 
+nnoremap <leader>anr :NERDTreeCWD<cr> 
+" au - Undotree
+nnoremap <leader>aut :UndotreeToggle<cr>
+nnoremap <leader>auo :UndotreeShow<cr>
+nnoremap <leader>auc :UndotreeHide<cr>
+nnoremap <leader>auf :UndotreeFocus<cr>
+
+" t - Toggle
+nnoremap <leader>tt :NERDTreeToggle<cr>
+nnoremap <leader>tu :UndotreeToggle<cr>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
