@@ -10,17 +10,19 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
 
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Shougo/denite.nvim'
 Plug 'kshenoy/vim-signature'
 
 Plug 'kien/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
+" Plug 'Shougo/denite.nvim'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

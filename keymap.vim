@@ -15,6 +15,8 @@ map <silent> <leader>el :lopen<cr>
 " f - files
 map <silent> <leader>ff :CtrlSpace o<cr>
 map <silent> <leader>fr :CtrlPMRU<cr>
+
+" h - hunks
  
 " t - NERDTree
 map <silent> <leader>tt :NERDTreeToggle<cr>
