@@ -1,10 +1,12 @@
 set backup             " keep a backup file (restore to previous version)
+let &backupdir = &backupdir[2:]
 set undofile           " keep an undo file (undo changes after closing)
 set ruler              " show the cursor position all the time
 set showcmd            " display incomplete commands
 set nu rnu
 set hlsearch
 set hidden
+set updatetime=250
 syntax on
 filetype plugin indent on
 " Appearance
@@ -12,33 +14,50 @@ set termguicolors
 colo molokai
 map <Space> <leader>
 
+" init plugins
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
-
+ 
 " a - Application
-" an - NERDTree
-nnoremap <leader>ann :NERDTree
-nnoremap <leader>ant :NERDTreeToggle<cr> 
-nnoremap <leader>ano :NERDTreeFocus<cr> 
-nnoremap <leader>anm :NERDTreeMirrow<cr> 
-nnoremap <leader>anc :NERDTreeClose<cr> 
-nnoremap <leader>anf :NERDTreeFind<cr> 
-nnoremap <leader>anr :NERDTreeCWD<cr> 
-" au - Undotree
-nnoremap <leader>aut :UndotreeToggle<cr>
-nnoremap <leader>auo :UndotreeShow<cr>
-nnoremap <leader>auc :UndotreeHide<cr>
-nnoremap <leader>auf :UndotreeFocus<cr>
+" al - Leaderf
+let g:Lf_ShortcutF = "<leader>alf"
+let g:Lf_ShortcutB = "<leader>alb"
+nnoremap <leader>algb :LeaderfBufferAll<cr>
+nnoremap <leader>alr :LeaderfMru<cr>
+nnoremap <leader>algr :LeaderfMruCwd<cr>
+nnoremap <leader>alf :LeaderfFunction<cr>
+nnoremap <leader>all :LeaderfLine<cr>
+nnoremap <leader>alhc :LeaderfHistoryCmd<cr>
+nnoremap <leader>alhs :LeaderfHistorySearch<cr>
 
-" t - Toggle
-nnoremap <leader>tt :NERDTreeToggle<cr>
-nnoremap <leader>tu :UndotreeToggle<cr>
+" t - NERDTree
+map <leader>tt :NERDTreeToggle<cr>
+map <leader>tm :NERDTreeMirrow<cr> 
+map <leader>tj :NERDTreeFind<cr> 
+map <leader>tf :NERDTreeFocus<cr>
+
+" u - undo
+map <leader>uu :UndotreeToggle<cr>
+map <leader>uf :UndotreeFocus<cr>
+
+" n - navigate
+nnoremap <leader>nf :CtrlSpace o<cr>
+nnoremap <leader>nb :CtrlSpace<cr>
+nnoremap <leader>nr :LeaderfMru<cr>
+
+" j - jump
+map <leader>jc <Plug>(easymotion-bd-f)
+
+" c - comments
+
+" v - vim
+nnoremap <leader>ve :vsplit $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
+nnoremap <leader>vq :qa!<cr>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-nnoremap <leader>ve :vsplit $MYVIMRC<cr>
-nnoremap <leader>vs :source $MYVIMRC<cr>
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
