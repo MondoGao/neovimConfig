@@ -24,9 +24,12 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 " Plug 'Shougo/denite.nvim'
 
+Plug 'ervandew/supertab'
+
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 Plug 'w0rp/ale'
 
@@ -54,8 +57,6 @@ if executable('ag')
 else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
-
-let g:deoplete#enable_at_startup = 1
  
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
@@ -64,3 +65,4 @@ let g:ale_fixers = {
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'

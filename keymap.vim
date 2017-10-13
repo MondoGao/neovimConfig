@@ -50,6 +50,14 @@ map <silent> <leader>vq :qa!<cr>
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-map <c-k> <Plug>(expand_region_expand)
-map <c-j> <Plug>(expand_region_shrink)
+map <c-h> <Plug>(expand_region_expand)
+map <c-l> <Plug>(expand_region_shrink)
 nmap <c-space> <nul> 
+
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
