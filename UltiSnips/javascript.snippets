@@ -1,0 +1,10 @@
+extends javascript_node
+global !p
+def to_camel_case(snake_str, split_str='-'):
+    components = snake_str.split(split_str)
+    return components[0] + "".join(x.title() for x in components[1:])
+endglobal
+
+snippet req "CommonJS Require"
+const ${2:`!p snip.rv = to_camel_case(t[1])`} = require('${1:path}');
+endsnippet
