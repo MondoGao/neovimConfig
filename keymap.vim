@@ -1,4 +1,5 @@
-map <Space> <leader>
+" map <Space> <leader>
+let mapleader = " "
 
 " b - buffers
 map <silent> <leader>nb :CtrlSpace<cr>
@@ -36,8 +37,9 @@ map <silent> <leader>gg :YcmCompleter GoTo<cr>
 map <silent> <leader>gd :YcmCompleter GoToDefinition<cr>
 map <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
-" r - refactor
+" r - refactor/run
 map <silent> <leader>rr :YcmCompleter RefactorRename 
+map <leader>rn :!node %<cr>
 
 " c - comments
 

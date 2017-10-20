@@ -38,6 +38,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
+Plug 'reasonml-editor/vim-reason'
 
 call plug#end()
 
@@ -66,3 +67,5 @@ let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
+
+let g:NERDSpaceDelims = 1
