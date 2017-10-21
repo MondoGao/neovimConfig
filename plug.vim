@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
+Plug 'tpope/vim-ragtag'
 
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -41,6 +42,10 @@ Plug 'reasonml-editor/vim-reason'
 Plug 'alvan/vim-closetag'
 Plug 'Valloric/MatchTagAlways'
 
+Plug 'kana/vim-textobj-user'
+Plug 'jasonlong/vim-textobj-css'
+Plug 'whatyouhide/vim-textobj-xmlattr'
+
 call plug#end()
 
 " vim-ariline
@@ -68,6 +73,8 @@ let g:ale_fixers = {
 
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
+
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 
