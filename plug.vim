@@ -35,10 +35,10 @@ Plug 'w0rp/ale'
 
 Plug 'flazz/vim-colorschemes'
 
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'elzr/vim-json'
+Plug 'sheerun/vim-polyglot'
 Plug 'reasonml-editor/vim-reason'
+Plug 'alvan/vim-closetag'
+Plug 'Valloric/MatchTagAlways'
 
 call plug#end()
 

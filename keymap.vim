@@ -39,7 +39,12 @@ map <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 " r - refactor/run
 map <silent> <leader>rr :YcmCompleter RefactorRename 
-map <leader>rn :!node %<cr>
+
+augroup javascriptMode
+  autocmd FileType javascript map <leader>rn :!node %<cr>
+
+  autocmd FileType javascript map <leader>ry :!yarn 
+augroup end
 
 " c - comments
 
