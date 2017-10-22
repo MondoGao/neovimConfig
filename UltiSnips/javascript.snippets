@@ -17,3 +17,15 @@ endsnippet
 snippet imp "Harmony Import"
 import ${2:`!p snip.rv = to_camel_case(t[1])`}$0 from '${1:path}';
 endsnippet
+
+snippet => "Arrow Function"
+($1) => {$0}
+endsnippet
+
+snippet =>r "Rambda Function"
+($1) => ($0)
+endsnippet
+
+snippet log "Log"
+console.log($1${VISUAL});
+endsnippet

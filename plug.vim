@@ -38,6 +38,7 @@ Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
 
 Plug 'sheerun/vim-polyglot'
+Plug 'hail2u/vim-css3-syntax'
 Plug 'reasonml-editor/vim-reason'
 Plug 'alvan/vim-closetag'
 Plug 'Valloric/MatchTagAlways'
