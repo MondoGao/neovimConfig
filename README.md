@@ -4,6 +4,7 @@
 
 - Vim 8+
 - NeoVim
+- NerdFont ([Download](https://github.com/ryanoasis/nerd-fonts))
 
 ## Usage
 
