@@ -2,7 +2,7 @@
 let mapleader = " "
 
 " b - buffers
-map <silent> <leader>nb :CtrlSpace<cr>
+map <silent> <leader>bb :CtrlSpace<cr>
 
 " d - docs
 map <silent> <leader>dd :YcmCompleter GetDoc<cr>
@@ -32,10 +32,14 @@ map <silent> <leader>uf :UndotreeFocus<cr>
 " j - jump
 map <silent> <leader>jc <Plug>(easymotion-bd-f)
 
-" g - goto
-map <silent> <leader>gg :YcmCompleter GoTo<cr>
-map <silent> <leader>gd :YcmCompleter GoToDefinition<cr>
-map <silent> <leader>gr :YcmCompleter GoToReferences<cr>
+" g - goto/git
+map <silent> <leader>gr :GitGutterRevertHunk<cr>
+map <silent> <leader>gp :GitGutterPreviewHunk<cr>
+
+" gt - goto
+map <silent> <leader>gtt :YcmCompleter GoTo<cr>
+map <silent> <leader>gtd :YcmCompleter GoToDefinition<cr>
+map <silent> <leader>gtr :YcmCompleter GoToReferences<cr>
 
 " r - refactor/run
 map <silent> <leader>rr :YcmCompleter RefactorRename 

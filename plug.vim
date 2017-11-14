@@ -38,8 +38,11 @@ Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
 
 Plug 'sheerun/vim-polyglot'
+Plug 'plasticboy/vim-markdown'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
+
 Plug 'alvan/vim-closetag'
 Plug 'Valloric/MatchTagAlways'
 
@@ -70,6 +73,7 @@ endif
  
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'css': ['stylelint'],
 \}
 
 let g:javascript_plugin_jsdoc = 1
