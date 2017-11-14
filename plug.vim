@@ -1,6 +1,7 @@
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
+" Editor Enhancement
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-repeat'
 Plug 'easymotion/vim-easymotion'
@@ -10,17 +11,24 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-ragtag'
 
+Plug 'alvan/vim-closetag'
+Plug 'Valloric/MatchTagAlways'
+
+Plug 'kana/vim-textobj-user'
+Plug 'jasonlong/vim-textobj-css'
+Plug 'whatyouhide/vim-textobj-xmlattr'
+
+" Applications
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mbbill/undotree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kshenoy/vim-signature'
 
+" Workspace & File Management
 Plug 'kien/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 " Plug 'Shougo/denite.nvim'
@@ -28,6 +36,7 @@ Plug 'mileszs/ack.vim'
 
 Plug 'ervandew/supertab'
 
+" Auto Complete & Snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
@@ -35,20 +44,18 @@ Plug 'honza/vim-snippets'
 
 Plug 'w0rp/ale'
 
+" UI
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
+Plug 'ryanoasis/vim-devicons'
 
+" Language Supports
 Plug 'sheerun/vim-polyglot'
 Plug 'plasticboy/vim-markdown'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
-
-Plug 'alvan/vim-closetag'
-Plug 'Valloric/MatchTagAlways'
-
-Plug 'kana/vim-textobj-user'
-Plug 'jasonlong/vim-textobj-css'
-Plug 'whatyouhide/vim-textobj-xmlattr'
 
 call plug#end()
 
