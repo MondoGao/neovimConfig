@@ -12,6 +12,8 @@ Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-ragtag'
 
 Plug 'alvan/vim-closetag'
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
+
 Plug 'Valloric/MatchTagAlways'
 
 Plug 'kana/vim-textobj-user'
@@ -20,6 +22,8 @@ Plug 'whatyouhide/vim-textobj-xmlattr'
 
 " Applications
 Plug 'scrooloose/nerdtree'
+let g:NERDSpaceDelims = 1
+
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
@@ -31,43 +35,67 @@ Plug 'kshenoy/vim-signature'
 " Workspace & File Management
 Plug 'kien/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
-" Plug 'Shougo/denite.nvim'
-Plug 'mileszs/ack.vim'
-
-Plug 'ervandew/supertab'
-
-" Auto Complete & Snippets
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-
-Plug 'w0rp/ale'
-
-" UI
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'flazz/vim-colorschemes'
-Plug 'ryanoasis/vim-devicons'
-
-" Language Supports
-Plug 'sheerun/vim-polyglot'
-Plug 'plasticboy/vim-markdown'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'jparise/vim-graphql'
-Plug 'reasonml-editor/vim-reason'
-
-call plug#end()
-
-" vim-ariline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-
 let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
 let g:CtrlSpaceUseTabline = 1
 let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
 let g:CtrlSpaceSaveWorkspaceOnSwitch = 1
 let g:CtrlSpaceSaveWorkspaceOnExit = 1
+
+Plug 'mileszs/ack.vim'
+
+Plug 'ervandew/supertab'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+
+
+" Auto Complete & Snippets
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+let g:ycm_semantic_triggers =  {
+  \   'c' : ['->', '.'],
+  \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
+  \             're!\[.*\]\s'],
+  \   'ocaml' : ['.', '#'],
+  \   'cpp,objcpp' : ['->', '.', '::'],
+  \   'perl' : ['->'],
+  \   'php' : ['->', '::'],
+  \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
+  \   'ruby' : ['.', '::'],
+  \   'lua' : ['.', ':'],
+  \   'erlang' : [':'],
+  \ }
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
+
+Plug 'w0rp/ale'
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'css': ['stylelint'],
+\}
+
+" UI
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+Plug 'flazz/vim-colorschemes'
+Plug 'ryanoasis/vim-devicons'
+
+" Language Supports
+Plug 'sheerun/vim-polyglot'
+let g:javascript_plugin_jsdoc = 1
+let g:jsx_ext_required = 0
+
+Plug 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_level = 1
+
+Plug 'Quramy/tsuquyomi'
+
+Plug 'hail2u/vim-css3-syntax'
+Plug 'jparise/vim-graphql'
+Plug 'reasonml-editor/vim-reason'
+
+call plug#end()
 
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
@@ -77,17 +105,3 @@ if executable('ag')
 else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
- 
-let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'css': ['stylelint'],
-\}
-
-let g:javascript_plugin_jsdoc = 1
-let g:jsx_ext_required = 0
-
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
-
-let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
-
-let g:NERDSpaceDelims = 1

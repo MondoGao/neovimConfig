@@ -41,6 +41,10 @@ map <silent> <leader>gtt :YcmCompleter GoTo<cr>
 map <silent> <leader>gtd :YcmCompleter GoToDefinition<cr>
 map <silent> <leader>gtr :YcmCompleter GoToReferences<cr>
 
+" d - type
+map <silent> <leader>dt :YcmCompleter GetType<cr>
+map <silent> <leader>dd :YcmCompleter GetDoc<cr>
+
 " r - refactor/run
 map <silent> <leader>rr :YcmCompleter RefactorRename 
 
