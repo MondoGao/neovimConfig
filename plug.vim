@@ -48,7 +48,7 @@ let g:CtrlSpaceSaveWorkspaceOnExit = 1
 
 Plug 'mileszs/ack.vim'
 
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 
