@@ -56,27 +56,30 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 " Auto Complete & Snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --cs-completer --go-completer --js-completer ' }
 let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-  \             're!\[.*\]\s'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
+      \'c' : ['->', '.'],
+      \'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
+      \'re!\[.*\]\s'],
+      \'ocaml' : ['.', '#'],
+      \'cpp,objcpp' : ['->', '.', '::'],
+      \'perl' : ['->'],
+      \'php' : ['->', '::'],
+      \'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
+      \'ruby' : ['.', '::'],
+      \'lua' : ['.', ':'],
+      \'erlang' : [':'],
+      \}
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 
 Plug 'w0rp/ale'
+let g:ale_linters = {
+      \'cs': ['mcsc']
+      \}
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'css': ['stylelint'],
-\}
+      \'javascript': ['eslint'],
+      \'css': ['stylelint'],
+      \}
 
 " UI
 Plug 'vim-airline/vim-airline'
