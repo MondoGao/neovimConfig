@@ -12,6 +12,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+let g:python_host_prog = expand('~').'/.pyenv/versions/2.7.14/bin/python'
+let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.2/bin/python'
+
 " init plugins
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/colorscheme.vim'
