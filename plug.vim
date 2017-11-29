@@ -15,6 +15,7 @@ Plug 'alvan/vim-closetag'
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
 Plug 'Valloric/MatchTagAlways'
+Plug 'editorconfig/editorconfig-vim'
 
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
@@ -101,6 +102,7 @@ Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
 Plug 'OrangeT/vim-csharp'
 Plug 'OmniSharp/omnisharp-vim'
+let g:OmniSharp_server_type = 'roslyn'
 
 call plug#end()
 
