@@ -99,8 +99,8 @@ Plug 'Quramy/tsuquyomi'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
