@@ -17,8 +17,13 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 Plug 'Valloric/MatchTagAlways'
 
 Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-function'
 Plug 'jasonlong/vim-textobj-css'
 Plug 'whatyouhide/vim-textobj-xmlattr'
+Plug 'sgur/vim-textobj-parameter'
+Plug 'jceb/vim-textobj-uri'
+Plug 'Julian/vim-textobj-variable-segment'
 
 " Applications
 Plug 'scrooloose/nerdtree'
