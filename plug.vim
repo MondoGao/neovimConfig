@@ -53,7 +53,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 
 " Auto Complete & Snippets
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --cs-completer --go-completer --js-completer ' }
 let g:ycm_semantic_triggers =  {
   \   'c' : ['->', '.'],
   \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
