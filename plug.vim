@@ -55,6 +55,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 " Auto Complete & Snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --cs-completer --go-completer --js-completer ' }
+let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_semantic_triggers =  {
       \'c' : ['->', '.'],
       \'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
@@ -105,7 +106,6 @@ Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
 Plug 'OrangeT/vim-csharp'
 Plug 'OmniSharp/omnisharp-vim'
-let g:OmniSharp_server_type = 'roslyn'
 
 call plug#end()
 

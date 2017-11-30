@@ -8,6 +8,8 @@ set hlsearch
 set hidden
 set updatetime=250
 filetype plugin indent on
+
+" Default tab behavior
 set expandtab
 set shiftwidth=2
 set softtabstop=2
