@@ -11,11 +11,11 @@ def to_camel_case(snake_str, split_str='-'):
 endglobal
 
 snippet req "CommonJS Require"
-const ${2:`!p snip.rv = to_camel_case(t[1])`}$0 = require('${1:path}');
+const ${2:`!p snip.rv = to_camel_case(t[1])`} = require('${1:path}')$0
 endsnippet
 
 snippet imp "Harmony Import"
-import ${2:`!p snip.rv = to_camel_case(t[1])`}$0 from '${1:path}';
+import ${2:`!p snip.rv = to_camel_case(t[1])`} from '${1:path}'$0
 endsnippet
 
 snippet => "Arrow Function"
