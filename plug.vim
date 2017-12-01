@@ -93,15 +93,17 @@ Plug 'ryanoasis/vim-devicons'
 
 " Language Supports
 Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
-
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_level = 1
-
+let g:vim_markdown_folding_disabled = 1
 Plug 'Quramy/tsuquyomi'
-
 Plug 'hail2u/vim-css3-syntax'
+Plug 'stephenway/postcss.vim'
+Plug 'elmcast/elm-vim'
+let g:elm_setup_keybindings = 0
 Plug 'jparise/vim-graphql'
 Plug 'reasonml-editor/vim-reason'
 Plug 'OrangeT/vim-csharp'
