@@ -1,3 +1,7 @@
+if !has('nvim')
+	packadd! matchit
+endif
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
@@ -10,6 +14,7 @@ Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-unimpaired'
 
 Plug 'alvan/vim-closetag'
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
