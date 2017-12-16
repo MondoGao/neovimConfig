@@ -15,6 +15,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-unimpaired'
+Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'alvan/vim-closetag'
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
@@ -97,6 +98,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
 
 " Language Supports
+Plug 'moll/vim-node'
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_folding_disabled = 1

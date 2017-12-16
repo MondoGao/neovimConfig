@@ -9,6 +9,9 @@ set hidden
 set updatetime=250
 filetype plugin indent on
 
+set smartcase
+set ignorecase
+
 " Default tab behavior
 set expandtab
 set shiftwidth=2
