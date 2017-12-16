@@ -6,7 +6,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Editor Enhancement
-Plug 'wellle/targets.vim'
 Plug 'tpope/vim-repeat'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
@@ -25,6 +24,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'wellle/targets.vim'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-function'
@@ -128,3 +128,9 @@ if executable('ag')
 else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
+
+augroup javascriptAbbr
+	autocmd!
+
+  autocmd FileType javascript Abolish cosnt const
+augroup end
