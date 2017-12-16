@@ -15,6 +15,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
 Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'alvan/vim-closetag'
