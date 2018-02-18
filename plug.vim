@@ -24,7 +24,6 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 
-Plug 'wellle/targets.vim'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-function'
