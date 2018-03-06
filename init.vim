@@ -30,6 +30,19 @@ execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/colorscheme.vim'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/keymap.vim'
 
+function s:MkNonExDir(file, buf)
+    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+        let dir=fnamemodify(a:file, ':h')
+        if !isdirectory(dir)
+            call mkdir(dir, 'p')
+        endif
+    endif
+endfunction
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
+
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
   autocmd!
