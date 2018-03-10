@@ -44,6 +44,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kshenoy/vim-signature'
+Plug 'rizzatti/dash.vim'
+Plug 'zerowidth/vim-copy-as-rtf'
 
 " Workspace & File Management
 Plug 'kien/ctrlp.vim'
@@ -61,7 +63,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 
 " Auto Complete & Snippets
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --cs-completer --go-completer --js-completer ' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer' }
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_semantic_triggers =  {
       \'c' : ['->', '.'],
@@ -97,6 +99,8 @@ let g:airline_powerline_fonts = 1
 
 Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Language Supports
 Plug 'moll/vim-node'
@@ -109,9 +113,10 @@ Plug 'stephenway/postcss.vim'
 Plug 'elmcast/elm-vim'
 let g:elm_setup_keybindings = 0
 Plug 'jparise/vim-graphql'
-Plug 'reasonml-editor/vim-reason'
-Plug 'OrangeT/vim-csharp'
-Plug 'OmniSharp/omnisharp-vim'
+" Plug 'reasonml-editor/vim-reason'
+" Plug 'OrangeT/vim-csharp'
+" Plug 'OmniSharp/omnisharp-vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
