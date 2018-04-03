@@ -1,11 +1,10 @@
-augroup javascriptMode
-	augroup javascriptAbbrs
-		autocmd FileType javascript Abolish cosnt const
-	augroup end
+setlocal path=.,src,node_nodules
+setlocal suffixesadd=.js,.jsx,.ts,.tsx
 
-	augroup javascriptKeymap
-		autocmd FileType javascript map <leader>rn :!node %<cr>
-		autocmd FileType javascript map <leader>ry :!yarn 
-	augroup end
+" Abbrs
+Abolish cosnt const
 
-augroup end
+" Keymap
+map <leader>rn :!node %<cr>
+map <leader>ry :!yarn 
+
