@@ -8,11 +8,11 @@ function LoadModeFile()
 		return
 	endif
 
-	let modeFile = fnamemodify(expand("<sfile>"), ':h:p').'/modes/'.&filetype.'.vim'
+	let modeFile = g:configFolder.'/modes/'.&filetype.'.vim'
 
 	if (filereadable(modeFile))
-		echomsg 'Loading mode file'.modeFile
-		execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/modes/'.&filetype.'.vim'
+		echo 'Loading mode file '.modeFile
+		execute 'source' modeFile
 	endif
 endfunction
 " for modeFile in split(glob(fnamemodify(expand("<sfile>"), ':h:p').'/modes/*.vim'))

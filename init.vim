@@ -25,11 +25,13 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let g:python_host_prog = expand('~').'/.pyenv/versions/2.7.14/bin/python'
 let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.2/bin/python'
 
+let g:configFolder = fnamemodify(expand("<sfile>"), ':h:p')
+
 " init plugins
-execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
-execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/colorscheme.vim'
-execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/keymap.vim'
-execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/mode.vim'
+execute 'source' g:configFolder.'/plug.vim'
+execute 'source' g:configFolder.'/colorscheme.vim'
+execute 'source' g:configFolder.'/keymap.vim'
+execute 'source' g:configFolder.'/mode.vim'
 
 function s:MkNonExDir(file, buf)
     if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'

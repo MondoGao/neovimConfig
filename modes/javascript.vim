@@ -1,4 +1,4 @@
-setlocal path=.,src,node_nodules
+setlocal path=.,src,node_modules
 setlocal suffixesadd=.js,.jsx,.ts,.tsx
 
 " Abbrs
