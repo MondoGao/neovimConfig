@@ -60,11 +60,13 @@ Plug 'mileszs/ack.vim'
 
 " Plug 'ervandew/supertab'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Shougo/denite.nvim'
 
 
 " Auto Complete & Snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer' }
-let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_semantic_triggers =  {
       \'c' : ['->', '.'],
       \'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
@@ -78,18 +80,21 @@ let g:ycm_semantic_triggers =  {
       \'lua' : ['.', ':'],
       \'erlang' : [':'],
       \}
+
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 
 Plug 'w0rp/ale'
 let g:ale_linters = {
-      \'cs': ['mcsc']
+      \'cs': ['mcsc'],
       \}
 let g:ale_fixers = {
-      \'javascript': ['eslint'],
+      \'javascript': ['eslint', 'prettier'],
+      \'typescript': ['tslint', 'prettier'],
       \'css': ['stylelint'],
       \}
+let g:ale_fix_on_save = 1
 
 " UI
 Plug 'vim-airline/vim-airline'
@@ -104,10 +109,15 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " Language Supports
 Plug 'moll/vim-node'
+Plug 'styled-components/vim-styled-components'
+Plug 'gutenye/json5.vim'
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_folding_disabled = 1
+
 Plug 'Quramy/tsuquyomi'
+let g:tsuquyomi_disable_default_mappings = 1
+
 Plug 'hail2u/vim-css3-syntax'
 Plug 'stephenway/postcss.vim'
 Plug 'elmcast/elm-vim'
@@ -132,9 +142,3 @@ if executable('ag')
 else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
-
-augroup javascriptAbbr
-	autocmd!
-
-  autocmd FileType javascript Abolish cosnt const
-augroup end

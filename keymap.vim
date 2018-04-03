@@ -48,12 +48,6 @@ map <silent> <leader>dd :YcmCompleter GetDoc<cr>
 " r - refactor/run
 map <silent> <leader>rr :YcmCompleter RefactorRename 
 
-augroup javascriptMode
-  autocmd FileType javascript map <leader>rn :!node %<cr>
-
-  autocmd FileType javascript map <leader>ry :!yarn 
-augroup end
-
 " c - comments
 
 " v - vim

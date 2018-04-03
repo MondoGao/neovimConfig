@@ -29,6 +29,7 @@ let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.2/bin/python'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/plug.vim'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/colorscheme.vim'
 execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/keymap.vim'
+execute 'source' fnamemodify(expand("<sfile>"), ':h:p').'/mode.vim'
 
 function s:MkNonExDir(file, buf)
     if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
