@@ -19,7 +19,7 @@ Plug 'tpope/vim-commentary'
 Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'alvan/vim-closetag'
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.tsx"
 
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'

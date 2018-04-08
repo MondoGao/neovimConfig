@@ -11,7 +11,6 @@ function LoadModeFile()
 	let modeFile = g:configFolder.'/modes/'.&filetype.'.vim'
 
 	if (filereadable(modeFile))
-		echo 'Loading mode file '.modeFile
 		execute 'source' modeFile
 	endif
 endfunction

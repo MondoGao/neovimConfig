@@ -33,7 +33,7 @@ map <silent> <leader>uf :UndotreeFocus<cr>
 map <silent> <leader>jc <Plug>(easymotion-bd-f)
 
 " g - goto/git
-map <silent> <leader>gr :GitGutterRevertHunk<cr>
+map <silent> <leader>gr :GitGutterUndoHunk<cr>
 map <silent> <leader>gp :GitGutterPreviewHunk<cr>
 
 " gt - goto
