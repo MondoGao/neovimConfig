@@ -110,7 +110,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Language Supports
 Plug 'moll/vim-node'
 Plug 'styled-components/vim-styled-components'
-Plug 'gutenye/json5.vim'
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_folding_disabled = 1
@@ -123,6 +122,7 @@ Plug 'stephenway/postcss.vim'
 Plug 'elmcast/elm-vim'
 let g:elm_setup_keybindings = 0
 Plug 'jparise/vim-graphql'
+Plug 'neovimhaskell/haskell-vim'
 " Plug 'reasonml-editor/vim-reason'
 " Plug 'OrangeT/vim-csharp'
 " Plug 'OmniSharp/omnisharp-vim'
