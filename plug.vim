@@ -119,6 +119,8 @@ let g:tsuquyomi_disable_default_mappings = 1
 
 Plug 'hail2u/vim-css3-syntax'
 Plug 'stephenway/postcss.vim'
+Plug 'posva/vim-vue'
+
 Plug 'elmcast/elm-vim'
 let g:elm_setup_keybindings = 0
 Plug 'jparise/vim-graphql'
