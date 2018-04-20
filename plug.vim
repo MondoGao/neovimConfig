@@ -19,7 +19,7 @@ Plug 'tpope/vim-commentary'
 Plug 'nelstrom/vim-visual-star-search'
 
 Plug 'alvan/vim-closetag'
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.tsx"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.tsx,*.wpy"
 
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
@@ -126,6 +126,8 @@ let g:tsuquyomi_disable_default_mappings = 1
 Plug 'hail2u/vim-css3-syntax'
 Plug 'stephenway/postcss.vim'
 Plug 'posva/vim-vue'
+Plug 'groenewege/vim-less'
+Plug 'ap/vim-css-color'
 
 Plug 'elmcast/elm-vim'
 let g:elm_setup_keybindings = 0
