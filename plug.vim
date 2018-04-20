@@ -32,6 +32,7 @@ Plug 'whatyouhide/vim-textobj-xmlattr'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'jceb/vim-textobj-uri'
 Plug 'Julian/vim-textobj-variable-segment'
+Plug 'wojtekmach/vim-rename'
 
 " Applications
 Plug 'scrooloose/nerdtree'
@@ -88,12 +89,15 @@ let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 Plug 'w0rp/ale'
 let g:ale_linters = {
       \'cs': ['mcsc'],
+			\'typescript': ['tslint'],
       \}
 let g:ale_fixers = {
       \'javascript': ['eslint', 'prettier'],
       \'typescript': ['tslint', 'prettier'],
+			\'json': ['prettier'],
       \'css': ['stylelint'],
-      \}
+			\'vue': ['prettier'],
+			\}
 let g:ale_fix_on_save = 1
 
 " UI
@@ -106,6 +110,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
+Plug 'luochen1990/rainbow'
+let g:rainbow_active = 1
 
 " Language Supports
 Plug 'moll/vim-node'
