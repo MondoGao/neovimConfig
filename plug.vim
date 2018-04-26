@@ -95,6 +95,7 @@ let g:ale_fixers = {
       \'javascript': ['eslint', 'prettier'],
       \'typescript': ['tslint', 'prettier'],
 			\'json': ['prettier'],
+			\'json5': ['prettier'],
       \'css': ['stylelint', 'prettier'],
       \'less': ['stylelint', 'prettier'],
 			\'vue': ['prettier'],
@@ -130,8 +131,10 @@ let g:tsuquyomi_disable_default_mappings = 1
 Plug 'hail2u/vim-css3-syntax'
 Plug 'stephenway/postcss.vim'
 Plug 'posva/vim-vue'
-Plug 'groenewege/vim-less'
 Plug 'ap/vim-css-color'
+Plug 'elzr/vim-json'
+Plug 'digitaltoad/vim-pug'
+Plug 'dNitro/vim-pug-complete'
 
 Plug 'elmcast/elm-vim'
 let g:elm_setup_keybindings = 0
@@ -142,7 +145,7 @@ Plug 'neovimhaskell/haskell-vim'
 " Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['css', 'markdown', 'elm', 'graphql']
+let g:polyglot_disabled = ['json', 'css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
