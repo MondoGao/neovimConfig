@@ -106,10 +106,7 @@ let g:ale_fix_on_save = 1
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#taboo#enabled = 1
 let g:airline_powerline_fonts = 1
-" Plug 'gcmt/taboo.vim'
-" let g:taboo_tabline = 0
 
 Plug 'flazz/vim-colorschemes'
 Plug 'ryanoasis/vim-devicons'
