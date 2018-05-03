@@ -32,7 +32,6 @@ Plug 'whatyouhide/vim-textobj-xmlattr'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'jceb/vim-textobj-uri'
 Plug 'Julian/vim-textobj-variable-segment'
-Plug 'wojtekmach/vim-rename'
 
 " Applications
 Plug 'scrooloose/nerdtree'
