@@ -108,6 +108,7 @@ Plug 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#taboo#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
 " Plug 'gcmt/taboo.vim'
 " let g:taboo_tabline = 0
 

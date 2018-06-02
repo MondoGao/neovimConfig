@@ -1,7 +1,7 @@
 syntax on
 set termguicolors
 
-colorscheme molokai
+colorscheme monokai_pro
 
 hi link jsObjectKey String
 hi link jsParens Operator
