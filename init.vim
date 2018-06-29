@@ -61,3 +61,10 @@ augroup vimrcEx
     \ endif
 
 augroup END
+
+"customize config
+" set leader w as :w
+noremap <leader>w :w<CR>
+
+" set leader q as :q
+noremap <leader>q :q<CR>
