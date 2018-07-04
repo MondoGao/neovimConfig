@@ -17,13 +17,19 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" Vim cursor for iterm2
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+if has('mac')
+  " Vim cursor for iterm2
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  
+  let g:python_host_prog = expand('~').'/.pyenv/versions/2.7.14/bin/python'
+  let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.5/bin/python'
+endif
 
-let g:python_host_prog = expand('~').'/.pyenv/versions/2.7.14/bin/python'
-let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.5/bin/python'
+if has('win32')
+  let g:python3_host_prog = expand('~').'AppData\Local\Programs\Python\Python37-32\python.exe'
+endif
 
 let g:configFolder = fnamemodify(expand("<sfile>"), ':h:p')
 

@@ -45,7 +45,9 @@ Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kshenoy/vim-signature'
 Plug 'rizzatti/dash.vim'
-Plug 'zerowidth/vim-copy-as-rtf'
+if has('mac')
+  Plug 'zerowidth/vim-copy-as-rtf'
+endif
 
 " Workspace & File Management
 Plug 'kien/ctrlp.vim'
