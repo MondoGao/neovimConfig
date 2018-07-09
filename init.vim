@@ -23,8 +23,8 @@ if has('mac')
   let &t_SR = "\<Esc>]50;CursorShape=2\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
   
-  let g:python_host_prog = expand('~').'/.pyenv/versions/2.7.14/bin/python'
-  let g:python3_host_prog = expand('~').'/.pyenv/versions/3.6.5/bin/python'
+  let g:python_host_prog = expand('~').'/.pyenv/versions/neovim2/bin/python'
+  let g:python3_host_prog = expand('~').'/.pyenv/versions/neovim3/bin/python'
 endif
 
 if has('win32')
