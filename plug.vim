@@ -66,7 +66,7 @@ Plug 'Shougo/denite.nvim'
 
 
 " Auto Complete & Snippets
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --cs-completer --go-completer --js-completer' }
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_semantic_triggers =  {
@@ -142,7 +142,7 @@ Plug 'jparise/vim-graphql'
 Plug 'neovimhaskell/haskell-vim'
 " Plug 'reasonml-editor/vim-reason'
 " Plug 'OrangeT/vim-csharp'
-" Plug 'OmniSharp/omnisharp-vim'
+Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['jsx', 'json', 'css', 'markdown', 'elm', 'graphql']
