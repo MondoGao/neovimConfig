@@ -20,6 +20,9 @@
 
 Reference to [Using virtual enviroments for python with neovim](https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim#using-virtual-environments).
 
+### Open external file in vim
+
+For mac, see <root>/applications/Vim.app, it denpends on [nvr](https://github.com/mhinz/neovim-remote), or you can edit it by Automator
 
 ## Features
 
