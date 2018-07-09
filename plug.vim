@@ -145,7 +145,7 @@ Plug 'neovimhaskell/haskell-vim'
 " Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['json', 'css', 'markdown', 'elm', 'graphql']
+let g:polyglot_disabled = ['jsx', 'json', 'css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
