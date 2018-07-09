@@ -89,8 +89,7 @@ let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 
 Plug 'w0rp/ale'
 let g:ale_linters = {
-      \'cs': ['mcsc'],
-			\'typescript': ['tslint'],
+			\'typescript': ['tslint']
       \}
 let g:ale_fixers = {
       \'javascript': ['eslint', 'prettier'],
