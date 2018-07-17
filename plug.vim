@@ -92,7 +92,9 @@ let g:ale_linters = {
 			\'typescript': ['tslint']
       \}
 let g:ale_fixers = {
-      \'javascript': ['eslint', 'prettier'],
+      \'javascript': [
+			\		'prettier-eslint'
+			\],
       \'typescript': ['tslint', 'prettier'],
 			\'json': ['prettier'],
 			\'json5': ['prettier'],
@@ -125,6 +127,7 @@ Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_folding_disabled = 1
 
+Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 let g:tsuquyomi_disable_default_mappings = 1
 
@@ -142,10 +145,10 @@ Plug 'jparise/vim-graphql'
 Plug 'neovimhaskell/haskell-vim'
 " Plug 'reasonml-editor/vim-reason'
 " Plug 'OrangeT/vim-csharp'
-Plug 'OmniSharp/omnisharp-vim'
+" Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['jsx', 'json', 'css', 'markdown', 'elm', 'graphql']
+let g:polyglot_disabled = ['typescript', 'jsx', 'json', 'css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
