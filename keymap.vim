@@ -32,9 +32,10 @@ map <silent> <leader>uf :UndotreeFocus<cr>
 " j - jump
 map <silent> <leader>jc <Plug>(easymotion-bd-f)
 
-" g - goto/git
+" g - git
 map <silent> <leader>gr :GitGutterUndoHunk<cr>
 map <silent> <leader>gp :GitGutterPreviewHunk<cr>
+map <silent> <leader>gst :Gstatus<cr>
 
 " gt - goto
 map <silent> <leader>gtt :YcmCompleter GoTo<cr>

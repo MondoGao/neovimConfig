@@ -44,9 +44,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kshenoy/vim-signature'
-Plug 'rizzatti/dash.vim'
 if has('mac')
-  Plug 'zerowidth/vim-copy-as-rtf'
+	Plug 'rizzatti/dash.vim'
+	Plug 'zerowidth/vim-copy-as-rtf'
 endif
 
 " Workspace & File Management
@@ -54,7 +54,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
 let g:CtrlSpaceUseTabline = 1
-let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
+" let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
 let g:CtrlSpaceSaveWorkspaceOnSwitch = 1
 let g:CtrlSpaceSaveWorkspaceOnExit = 1
 
@@ -93,7 +93,7 @@ let g:ale_linters = {
       \}
 let g:ale_fixers = {
       \'javascript': [
-			\		'prettier-eslint'
+			\	'prettier'
 			\],
       \'typescript': ['tslint', 'prettier'],
 			\'json': ['prettier'],
@@ -147,8 +147,14 @@ Plug 'neovimhaskell/haskell-vim'
 " Plug 'OrangeT/vim-csharp'
 " Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
+
+Plug 'neoclide/vim-jsx-improve'
+Plug 'peitalin/vim-jsx-typescript'
+
+Plug 'chemzqm/wxapp.vim'
+
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['typescript', 'jsx', 'json', 'css', 'markdown', 'elm', 'graphql']
+let g:polyglot_disabled = ['javascript', 'jsx', 'typescript', 'json', 'css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
