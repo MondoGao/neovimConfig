@@ -7,6 +7,7 @@ set nu rnu
 set hlsearch
 set hidden
 set updatetime=250
+set exrc
 filetype plugin indent on
 
 set smartcase
@@ -67,3 +68,5 @@ augroup vimrcEx
     \ endif
 
 augroup END
+
+set secure
