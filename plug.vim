@@ -148,13 +148,22 @@ Plug 'neovimhaskell/haskell-vim'
 " Plug 'OmniSharp/omnisharp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+Plug 'pangloss/vim-javascript'
 Plug 'neoclide/vim-jsx-improve'
-Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'chemzqm/wxapp.vim'
 
+" Plantuml
+Plug 'aklt/plantuml-syntax'
+let g:plantuml_executable_script = 'java -jar '.$HOME.'/Bin/plantuml.jar -tsvg $@'
+Plug 'scrooloose/vim-slumlord'
+Plug 'weirongxu/plantuml-previewer.vim'
+let g:plantuml_previewer#plantuml_jar_path = $HOME.'/Bin/plantuml.jar'
+
+Plug 'tyru/open-browser.vim'
+
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['javascript', 'jsx', 'typescript', 'json', 'css', 'markdown', 'elm', 'graphql']
+let g:polyglot_disabled = ['javascript', 'typescript', 'json', 'css', 'markdown', 'elm', 'graphql']
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
